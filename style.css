@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+.left-side{
+    width: min(75%, 50vw);
+    flex: auto;
+}
+.image{
+    height: calc(100vh - 5px);
+    width: 100%;
+}
+.photo-credit {
+    position: absolute;
+    top: 85vh;
+    left: 5vw;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+a:visited,a:link,a{
+    font-size: 1.5rem;
+    color: black;
+}
+.form-filling, .form-text{
+    line-height: 30px;
+    margin-left: 75px;
+}
+.form-section{
+    background-color: gray;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 100px;
+}
+.text-section{
+    margin-right: 150px;
+    font-size: 1.5rem;
+    margin-left: 75px;
+}

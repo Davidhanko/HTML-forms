@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="passValidation.js" defer></script>
+</head>
+<body>
+
+<section class="left-side">
+    <img src="Image/background.jpg" class="image"/>
+    <p class="photo-credit">Photo by <a href="https://www.pexels.com/@consuelo-borroni-384723245/">Consuelo Borroni</a> on <a href="https://www.pexels.com">Pexels</a> </p>
+</section>
+
+<section class="right-side">
+    <section class="text-section">
+        <div>
+            <p>
+                This is not a real online service!
+                Had you ever had an issue about how can you meet other people with cool yachts?
+                The solution is here! <br><br>Just fill out the form below and enjoy the <em>satisfaction</em> of friendship!
+            </p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <form action="#" method="get">
+            <p class="form-text">The question is, are you ready?</p>
+            <div class="form-filling">
+                <label for="firstName">First name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Bob" minlength="2" maxlength="20" required>
+
+                <label for="lastName">Last name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Ross" minlength="2" maxlength="20" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="phoneNumber">Phone number</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="1234-567-890"
+                       pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                       title="Please enter a valid phone number, example 1234-567-890" required>
+                <br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" minlength="8" maxlength="20"
+                       title="Please use at minimum 8 characters, and at maximum 20." required>
+
+                <label for="confirmPassword">Confirm password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" minlength="8" maxlength="20"
+                       title="Please use at minimum 8 characters, and at maximum 20." required>
+            </div>
+            <button type="submit" class="form-text">Create account</button>
+        </form>
+        <p  class="form-text">Already have an account? <a href="#">Log in</a></p>
+    </section>
+</section>
+</body>
+</html>
