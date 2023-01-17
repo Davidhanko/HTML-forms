@@ -65,8 +65,8 @@ body{
     color: white;
     width: min(20vw, 300px);
     height: 200px;
-    margin-top: 27vh;
-    margin-left: -32vw;
+    margin-top: -74vh;
+    /*margin-left: -32vw;*/
 }
 
 
