@@ -9,8 +9,13 @@
 <body>
 
 <section class="left-side">
-    <img src="Image/background.jpg" class="image"/>
-    <p class="photo-credit">Photo by <a href="https://www.pexels.com/@consuelo-borroni-384723245/">Consuelo Borroni</a> on <a href="https://www.pexels.com">Pexels</a> </p>
+    <img src="Image/background.jpg" class="image" alt="Picture of yachts"/>
+    <div class="logoDiv"></div>
+    <img src="Image/logo.png" alt="Logo" class="logoImage"/>
+    <p class="logoText">Yachbook</p>
+    <p class="photo-credit">Photo by <a href="https://www.pexels.com/@luca-musella-1915088/" class="credit">Luca Musella</a> on <a class="credit" href="https://www.pexels.com">Pexels</a>.<br>
+    Logo provided by <a class="credit" href="https://www.freepik.com/free-vector/illustration-summer-beach-object_2824885.htm#query=yacht%20logo&position=31&from_view=keyword">Image by rawpixel.com</a> on Freepik.
+    </p>
 </section>
 
 <section class="right-side">
@@ -25,34 +30,60 @@
     </section>
 
     <section class="form-section">
-        <form action="#" method="get">
-            <p class="form-text">The question is, are you ready?</p>
-            <div class="form-filling">
-                <label for="firstName">First name</label>
-                <input type="text" name="firstName" id="firstName" placeholder="Bob" minlength="2" maxlength="20" required>
-
-                <label for="lastName">Last name</label>
-                <input type="text" name="lastName" id="lastName" placeholder="Ross" minlength="2" maxlength="20" required>
-                <br>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-
-                <label for="phoneNumber">Phone number</label>
-                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="1234-567-890"
-                       pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
-                       title="Please enter a valid phone number, example 1234-567-890" required>
-                <br>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" minlength="8" maxlength="20"
-                       title="Please use at minimum 8 characters, and at maximum 20." required>
-
-                <label for="confirmPassword">Confirm password</label>
-                <input type="password" name="confirmPassword" id="confirmPassword" minlength="8" maxlength="20"
-                       title="Please use at minimum 8 characters, and at maximum 20." required>
-            </div>
-            <button type="submit" class="form-text">Create account</button>
-        </form>
-        <p  class="form-text">Already have an account? <a href="#">Log in</a></p>
+        <div class="form-div">
+            <form action="#" method="get">
+                <div class="background-form">
+                    <div class="form-div">
+                        <p class="form-text">The question is, are you ready?</p><br>
+                    <div class="form-flex">
+                    <div class="form-divider">
+                        <div class="form-group">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Bob" minlength="2"
+                                   maxlength="20"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Ross" minlength="2"
+                                   maxlength="20"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="form-divider">
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="1234-567-890"
+                                   pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                                   title="Please enter a valid phone number, example 1234-567-890" required>
+                        </div>
+                    </div>
+                    <div class="form-divider">
+                        <div class="form-group">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" minlength="8" maxlength="20"
+                                   title="Please use at minimum 8 characters, and at maximum 20." required>
+                                <div class="error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" minlength="8"
+                                   maxlength="20"
+                                   title="Please use at minimum 8 characters, and at maximum 20." required>
+                                <div class="error"></div>
+                        </div>
+                    </div>
+                        </div>
+                </div>
+                </div>
+                <button type="submit"  onclick="passValidation()" class="form-button">Create account</button>
+                <p class="form-text-bottom">Already have an account? <a href="#" class="logIn">Log in</a></p>
+            </form>
+        </div>
     </section>
 </section>
 </body>
