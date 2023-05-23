@@ -58,6 +58,10 @@ body{
     opacity: 50%;
     width: 32vw;
     height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .logoImage{
@@ -65,14 +69,12 @@ body{
     color: white;
     width: min(20vw, 300px);
     height: 200px;
-    margin-top: -74vh;
-    /*margin-left: -32vw;*/
+    margin-left: -15vw;
 }
 
 
 .logoText{
     position: absolute;
-    margin-top: -530px;
     margin-left: 15vw;
     font-size: 3rem;
     width: 15vw;
@@ -87,13 +89,14 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 80px;
-    flex: 2;
+    gap: 40px;
+    flex: 1;
+    height: 0;
 }
 
 .text-section{
     margin-top: 100px;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin-right: 150px;
     margin-left: 75px;
     max-height: 200px;
@@ -160,7 +163,7 @@ input{
     color: white;
     font-weight: bold;
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 2vh;
     transition: all 0.8s ease-in-out;
 }
 
